@@ -12,12 +12,16 @@ Develop a model that can be integrated into real-world medical applications.
 Source: TUH EEG Seizure Corpus (Temple University)
 **Structure:**
 Seizure EEG samples
+
 Non-seizure EEG samples
+
 Multiple channels and frequencies
 
 **Preprocessing Steps:**
 Noise removal using a Butterworth filter
+
 Channel-wise normalization
+
 Segmentation into fixed time windows
 
 **Methodology**
