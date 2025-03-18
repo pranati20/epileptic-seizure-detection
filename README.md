@@ -1,37 +1,32 @@
-# epileptic-seizure-detection
+Epileptic Seizure Detection Using Deep Learning on EEG Data
 
-📌 Overview
-Epilepsy is a neurological disorder characterized by recurrent seizures. This project leverages Deep Learning techniques to analyze EEG (Electroencephalography) data and classify seizures in patients.
 
-🎯 Objective
-Detect epileptic seizures in EEG signals using Self-Supervised Learning (SSL).
-Improve accuracy and reduce false positives in seizure detection.
-Provide a scalable and automated solution for clinical applications.
-📊 Dataset
+Overview
+This project uses deep learning techniques to analyze EEG (Electroencephalography) data and classify seizure events. It aims to provide an automated and scalable solution for seizure detection in clinical applications.
+
+Objective
+Detect epileptic seizures from EEG signals using self-supervised learning (SSL).
+Improve detection accuracy and reduce false positives.
+Develop a model that can be integrated into real-world medical applications.
+Dataset
 Source: TUH EEG Seizure Corpus (Temple University)
 Structure:
-Seizure EEG samples 🟢
-Non-seizure EEG samples 🔴
-Multiple channels & frequencies
-Preprocessing:
-Noise removal (Butterworth filter)
+Seizure EEG samples
+Non-seizure EEG samples
+Multiple channels and frequencies
+Preprocessing Steps:
+Noise removal using a Butterworth filter
 Channel-wise normalization
-Signal segmentation into time windows
-🔬 Methodology
-1️⃣ Data Preprocessing:
-
-Signal filtering (bandpass, notch)
-Feature extraction (FFT, Wavelet Transform)
-2️⃣ Model Architecture:
-CNN-RNN Hybrid: Captures spatial + temporal EEG features
-Self-Supervised Learning (SimCLR/VICReg): Learns EEG representations without labeled data
-3️⃣ Training & Evaluation:
-Train/test split (80-20)
-Cross-validation
-Metrics: Accuracy, Precision, Recall, F1-score
-
-🛠️ Tech Stack
-Python (NumPy, Pandas, SciPy)
-PyTorch / TensorFlow (for deep learning)
-MNE-Python (for EEG signal processing)
-Matplotlib & Seaborn (visualization)
+Segmentation into fixed time windows
+Methodology
+1. Data Preprocessing
+Apply signal filtering (bandpass, notch filters)
+Extract features using Fast Fourier Transform (FFT) and Wavelet Transform
+Normalize EEG signals and segment data
+2. Model Architecture
+Use a CNN-RNN hybrid to capture spatial and temporal EEG features
+Train a self-supervised learning model (SimCLR/VICReg) for feature representation
+3. Training and Evaluation
+Train-test split (80-20)
+Apply cross-validation
+Evaluate using accuracy, precision, recall, and F1-score
